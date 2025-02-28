@@ -1,0 +1,123 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos básicos */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  #head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #35424a;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Container principal com grid */
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Estilização dos containers das seções */
+  #mensagens,
+  #aulas,
+  #noticias {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Seção Mensagens */
+  #mensagens #user_name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .mns_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .mns_box .icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+  }
+  
+  .mns_box .mns {
+    font-size: 0.9em;
+  }
+  
+  /* Seção Aulas */
+  #aulas p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .aula {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .aula:last-child {
+    border-bottom: none;
+  }
+  
+  .aula p {
+    margin: 5px 0;
+  }
+  
+  .aula-info {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Seção Notícias */
+  #noticias p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .noticia {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .noticia:last-child {
+    border-bottom: none;
+  }
+  
+  .noticia p {
+    margin: 5px 0;
+  }
+  
+  .noticia-info {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Responsividade: em telas menores, as colunas se empilham */
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
+  
