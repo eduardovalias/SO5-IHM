@@ -7,7 +7,6 @@
     --text-color: #333;
     --header-bg: #35424a;
     --header-text: #fff;
-    --logo-color: var(--primary-color);
   }
   
   /* Tema Inatel (institucional) */
@@ -18,7 +17,6 @@
     --text-color: #333;
     --header-bg: #002244;
     --header-text: #fff;
-    --logo-color: #ffffff;
   }
   
   /* Tema Alternativo */
@@ -29,7 +27,6 @@
     --text-color: #212121;
     --header-bg: #bf360c;
     --header-text: #fff;
-    --logo-color: #ffffff;
   }
   
   /* Reset */
@@ -70,7 +67,7 @@
   .svg_logo_inatel {
     width: 100px;
     height: auto;
-    fill: var(--logo-color);
+    fill: var(--primary-color);
   }
   
   /* Botão para trocar tema */
